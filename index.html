@@ -2,61 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jhon Miranda-Garcia | Computer Science Student</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       background: #0f172a;
       color: #e5e7eb;
       max-width: 900px;
       margin: auto;
       padding: 40px 20px;
+      line-height: 1.6;
     }
-    h1 { font-size: 2.5rem; }
-    h2 { margin-top: 3rem; }
-    .project {
+    a { color: #38bdf8; text-decoration: none; transition: color 0.2s; }
+    a:hover { color: #22c55e; text-decoration: underline; }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    h2 {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #374151;
+      padding-bottom: 0.5rem;
+    }
+    h3 { margin-bottom: 0.5rem; }
+     .project {
       background: #020617;
       padding: 20px;
       border-radius: 12px;
       margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    a { color: #38bdf8; text-decoration: none; }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    }
+    .project-links a { margin-right: 15px; }
+
+    .contact a { display: inline-block; margin-bottom: 5px; }
+
+    @media (max-width: 600px) {
+      body { padding: 20px 10px; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.2rem; }
+    }
   </style>
 </head>
-
+  
 <body>
   <h1>Jhon Miranda-Garcia</h1>
-  <p>Computer Science Student</p>
+  <p>Junior, Computer Science Student | Clemson University</p>
 
   <h2>Projects</h2>
 
-<div class="project">
-  <h3>Systems-Driven Roguelike (Godot)</h3>
-  <p>
-    Procedural dungeon generation, modular ability system, and event-based item synergies.
-  </p>
-  <p>
-    <a href="https://github.com/jgarcia-04">GitHub</a>
-  </p>
-</div>
-
-<div class="project">
-  <h3>Network Monitor Dashboard (Python, FastAPI, React, Chart.js)</h3>
-  <p>
-    Real-time network monitoring dashboard displaying latency and device metrics with visual charts.
-    Built using FastAPI backend, React frontend, and Chart.js for dynamic visualizations.
-  </p>
-  <p>
-    <a href="#">Live Demo (in progress)</a> |
-    <a href="https://github.com/jgarcia-04/networkMonitorDashboard.git">GitHub</a>
-  </p>
-</div>
-
+  <div class="project">
+    <h3>Systems-Driven Roguelike (Godot)</h3>
+    <p>
+      Procedural dungeon generation, modular ability system, and event-based item synergies.
+    </p>
+    <div class="project-links">
+      <a href="https://github.com/jgarcia-04" target="_blank">GitHub</a>
+    </div>
+  </div>
+  
+  <div class="project">
+    <h3>Network Monitor Dashboard (Python, FastAPI, React, Chart.js)</h3>
+    <p>
+      Real-time network monitoring dashboard displaying latency and device metrics with dynamic visual charts.
+      Built using FastAPI backend, React frontend, and Chart.js for visualization.
+    </p>
+    <div class="project-links">
+      <a href="#" style="color:#22c55e;">Live Demo (in progress)</a>
+      <a href="https://github.com/jgarcia-04/networkMonitorDashboard.git" target="_blank">GitHub</a>
+    </div>
+  </div>
 
   <h2>Contact</h2>
-  <p>
-    Email: garciamj2036@gmail.com <br>
-    LinkedIn: <a href="https://linkedin.com/in/Jhon-Miranda-Garcia/">linkedin.com/in/Jhon-Miranda-Garcia</a>
-  </p>
+  <div class="contact">
+    <a href="mailto:garciamj2036@gmail.com">garciamj2036@gmail.com</a><br>
+    <a href="https://linkedin.com/in/Jhon-Miranda-Garcia/" target="_blank">LinkedIn</a> | 
+    <a href="https://jgarcia-04.github.io/" target="_blank">Portfolio</a>
+  </div>
 </body>
 </html>
